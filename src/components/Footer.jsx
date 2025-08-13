@@ -13,9 +13,32 @@ const Footer = () => {
           Mari bersama menjaga warisan leluhur.
         </p>
         <div className="mt-6 flex justify-center space-x-6 text-lg">
-          <span>📱 Facebook</span>
-          <span>📷 Instagram</span>
-          <span>📘 YouTube</span>
+          <a 
+            href="https://github.com/zulkifli09791" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="hover:text-white-600"
+          > Github
+            <i className="fab fa-facebook fa-lg"></i>
+          </a>
+
+          <a 
+            href="https://instagram.com/zulkifli_145" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="hover:text-pink-500"
+          > Instagram
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a 
+            href="https://youtube.com/@username" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="hover:text-red-600"
+          > Youtube
+            <i className="fab fa-youtube fa-lg"></i>
+          </a>
         </div>
         <p className="text-xs mt-6 opacity-50">
           © 2025 Kalkulator Adat Bugis. Hak Cipta dilindungi.

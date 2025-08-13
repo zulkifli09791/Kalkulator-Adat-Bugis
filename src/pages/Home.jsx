@@ -25,7 +25,7 @@ const HomePage = () => {
       {/* Fitur Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
         {[
-          { path: '/panai', title: '💰 Kalkulator Panai’', desc: 'Hitung sesuai adat Bugis' },
+          { path: '/panai', title: '💰 Kalkulator Panai’', desc: 'Hitung estimasi sesuai adat Bugis' },
           { path: '/haribai', title: '📅 Hari Baik', desc: 'Tentukan hari pernikahan' },
           { path: '/kekerabatan', title: '🧬 Cek Kekerabatan', desc: 'Cek hubungan keluarga' },
           { path: '/lontara', title: '✒️ Konversi Lontara', desc: 'Tulisan tradisional Bugis' },

@@ -27,11 +27,11 @@ const CalculatorPanai = () => {
 
     // 1. Pendidikan
     const pendidikanMap = {
-      sma: { nilai: 5_000_000, label: 'SMA' },
-      diploma: { nilai: 8_000_000, label: 'Diploma' },
-      sarjana: { nilai: 12_000_000, label: 'Sarjana' },
-      magister: { nilai: 18_000_000, label: 'Magister' },
-      doktor: { nilai: 25_000_000, label: 'Doktor' },
+      sma: { nilai: 10_000_000, label: 'SMA' },
+      diploma: { nilai: 15_000_000, label: 'Diploma' },
+      sarjana: { nilai: 30_000_000, label: 'Sarjana' },
+      magister: { nilai: 50_000_000, label: 'Magister' },
+      doktor: { nilai: 100_000_000, label: 'Doktor' },
     };
     if (form.pendidikan && pendidikanMap[form.pendidikan]) {
       total += pendidikanMap[form.pendidikan].nilai;
@@ -40,11 +40,12 @@ const CalculatorPanai = () => {
 
     // 2. Pekerjaan
     const pekerjaanMap = {
-      buruh: { nilai: 5_000_000, label: 'Buruh' },
-      guru: { nilai: 10_000_000, label: 'Guru' },
-      dokter: { nilai: 20_000_000, label: 'Dokter' },
-      pejabat: { nilai: 25_000_000, label: 'Pejabat' },
-      pengusaha: { nilai: 30_000_000, label: 'Pengusaha' },
+      pengangguran: {nilai: 5_000_000, label: 'Pengangguran'},
+      buruh: { nilai:15_000_000, label: 'Buruh' },
+      guru: { nilai: 30_000_000, label: 'Guru' },
+      dokter: { nilai: 100_000_000, label: 'Dokter' },
+      pejabat: { nilai: 100_000_000, label: 'Pejabat' },
+      pengusaha: { nilai: 50_000_000, label: 'Pengusaha' },
     };
     if (form.pekerjaan && pekerjaanMap[form.pekerjaan]) {
       total += pekerjaanMap[form.pekerjaan].nilai;
@@ -66,11 +67,11 @@ const CalculatorPanai = () => {
 
     // 4. Suku (opsional tapi berpengaruh)
     const sukuMap = {
-      bugis: { nilai: 5_000_000, label: 'Bugis' },
-      makassar: { nilai: 3_000_000, label: 'Makassar' },
-      toraja: { nilai: 2_000_000, label: 'Toraja' },
-      jawa: { nilai: 1_000_000, label: 'Jawa' },
-      lainnya: { nilai: 0, label: 'Lainnya' },
+      bugis: { nilai: 25_000_000, label: 'Bugis' },
+      makassar: { nilai: 15_000_000, label: 'Makassar' },
+      toraja: { nilai: 5_000_000, label: 'Toraja' },
+      jawa: { nilai: 5_000_000, label: 'Jawa' },
+      lainnya: { nilai: 2_000_000, label: 'Lainnya' },
     };
     if (form.suku && sukuMap[form.suku]) {
       total += sukuMap[form.suku].nilai;
@@ -84,7 +85,7 @@ const CalculatorPanai = () => {
     }
 
     // 6. Kecantikan (subjektif, skala 1-5)
-    const kecantikanBonus = (form.kecantikan - 3) * 3_000_000;
+    const kecantikanBonus = (form.kecantikan - 3) * 5_000_000;
     if (kecantikanBonus > 0) {
       total += kecantikanBonus;
       faktor.push(`Kecantikan (Skala ${form.kecantikan}/5): +${formatRupiah(kecantikanBonus)}`);
@@ -162,6 +163,7 @@ const CalculatorPanai = () => {
             className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-bugis-emas"
           >
             <option value="">Pilih pekerjaan</option>
+            <option value="pengangguran">Pengangguran</option>
             <option value="buruh">Buruh</option>
             <option value="guru">Guru</option>
             <option value="dokter">Dokter</option>

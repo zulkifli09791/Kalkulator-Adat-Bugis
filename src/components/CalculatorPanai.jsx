@@ -31,7 +31,7 @@ const CalculatorPanai = () => {
       diploma: { nilai: 15_000_000, label: 'Diploma' },
       sarjana: { nilai: 30_000_000, label: 'Sarjana' },
       magister: { nilai: 50_000_000, label: 'Magister' },
-      doktor: { nilai: 100_000_000, label: 'Doktor' },
+      doktor: { nilai: 70_000_000, label: 'Doktor' },
     };
     if (form.pendidikan && pendidikanMap[form.pendidikan]) {
       total += pendidikanMap[form.pendidikan].nilai;
@@ -67,7 +67,7 @@ const CalculatorPanai = () => {
 
     // 4. Suku (opsional tapi berpengaruh)
     const sukuMap = {
-      bugis: { nilai: 25_000_000, label: 'Bugis' },
+      bugis: { nilai: 20_000_000, label: 'Bugis' },
       makassar: { nilai: 15_000_000, label: 'Makassar' },
       toraja: { nilai: 5_000_000, label: 'Toraja' },
       jawa: { nilai: 5_000_000, label: 'Jawa' },

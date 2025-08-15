@@ -9,7 +9,7 @@ const Footer = () => {
         />
         <h3 className="text-2xl font-adat mb-2">Pinisi Mengarungi Budaya</h3>
         <p className="text-sm opacity-80 max-w-lg mx-auto">
-          🌾 Dibuat dengan cinta untuk melestarikan adat dan budaya Bugis. 
+          🎉 Dibuat untuk melestarikan adat dan budaya Bugis. 
           Mari bersama menjaga warisan leluhur.
         </p>
         <div className="mt-6 flex justify-center space-x-6 text-lg">

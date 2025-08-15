@@ -59,9 +59,9 @@ const HariBaik = () => {
     // Alasan adat
     const alasan = `
       Tanggal ini dipilih berdasarkan pertimbangan adat Bugis:
-      - Musim kemarau (April-Oktober) adalah waktu terbaik untuk mengadakan pesta adat.
+      - Musim kemarau (April-Oktober) adalah waktu yang terbaik untuk mengadakan pesta adat.
       - Tanggal ganjil (17) dianggap membawa keberuntungan dan keharmonisan.
-      - Bulan ${tanggalBaik.toLocaleString('id-ID', { month: 'long' })} merupakan waktu tradisional masyarakat Bugis mengadakan pernikahan.
+      - Bulan ${tanggalBaik.toLocaleString('id-ID', { month: 'long' })} merupakan estimasi waktu tradisional masyarakat Bugis mengadakan pernikahan.
       - Kedua mempelai telah mencapai usia dewasa dan siap secara adat.
     `;
 

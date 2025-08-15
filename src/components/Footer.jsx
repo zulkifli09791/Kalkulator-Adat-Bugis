@@ -32,7 +32,7 @@ const Footer = () => {
           </a>
 
           <a 
-            href="https://youtube.com/@username" 
+            href="https://youtube.com/@user" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="hover:text-red-600"

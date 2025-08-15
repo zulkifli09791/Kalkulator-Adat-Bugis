@@ -28,7 +28,7 @@ const CalculatorPanai = () => {
     // 1. Pendidikan
     const pendidikanMap = {
       sma: { nilai: 10_000_000, label: 'SMA' },
-      diploma: { nilai: 15_000_000, label: 'Diploma' },
+      diploma: { nilai: 20_000_000, label: 'Diploma' },
       sarjana: { nilai: 30_000_000, label: 'Sarjana' },
       magister: { nilai: 50_000_000, label: 'Magister' },
       doktor: { nilai: 70_000_000, label: 'Doktor' },

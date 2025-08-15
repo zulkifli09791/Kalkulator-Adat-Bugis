@@ -43,8 +43,8 @@ const CalculatorPanai = () => {
       pengangguran: {nilai: 5_000_000, label: 'Pengangguran'},
       buruh: { nilai:15_000_000, label: 'Buruh' },
       guru: { nilai: 30_000_000, label: 'Guru' },
-      dokter: { nilai: 100_000_000, label: 'Dokter' },
-      pejabat: { nilai: 100_000_000, label: 'Pejabat' },
+      dokter: { nilai: 150_000_000, label: 'Dokter' },
+      pejabat: { nilai: 120_000_000, label: 'Pejabat' },
       pengusaha: { nilai: 50_000_000, label: 'Pengusaha' },
     };
     if (form.pekerjaan && pekerjaanMap[form.pekerjaan]) {

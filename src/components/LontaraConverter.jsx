@@ -78,7 +78,7 @@ const LontaraConverter = () => {
       </div>
 
       <div className="mt-6 text-sm text-gray-600">
-        <p><strong>Catatan:</strong> Konversi ini dasar. Aksara Lontara memiliki bentuk kontekstual dan tidak semua huruf tersedia di font Unicode saat ini.</p>
+        <p><strong>Catatan:</strong> Konversi ini dasar dan tidak luput dari kemungkinkan kesalahan. Aksara Lontara memiliki bentuk kontekstual dan tidak semua huruf tersedia di font Unicode saat ini.</p>
       </div>
     </div>
   );
